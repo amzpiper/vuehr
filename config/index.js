@@ -11,17 +11,21 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-      '/': {
-        target: 'http://localhost:8082',
-        changeOrigin: true,
-        pathRewrite: {
-          '^/':''
-        }
-      },
-      '/ws/*':{
-        target: 'ws://127.0.0.1:8082',
-        ws: true
-      }
+      // '/': {
+      //   target: 'http://localhost:8082',
+      //   changeOrigin: true,
+      //   pathRewrite: {
+      //     '^/':''
+      //   }
+      // },
+      // '/ws/*':{
+      //   target: 'ws://127.0.0.1:8082',
+      //   changeOrigin: true,
+      //   ws: true,
+      //   pathRewrite: {
+      //     '^/ws/':''
+      //   }
+      // }
     },
 
     // Various Dev Server settings

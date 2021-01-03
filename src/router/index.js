@@ -18,12 +18,12 @@ export default new Router({
     },
     {
       path: '/home',
-      name: '主页',
+      name: '首页',
       component: Home,
       hidden: true,
       meta: {
         title: '首页',
-        requireAuth: true
+        requireAuth: false
       }
     }
   ]
